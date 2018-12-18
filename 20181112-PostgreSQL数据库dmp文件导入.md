@@ -24,13 +24,12 @@ create user cuanadb password 'cuanadb';
 
 # 4.在pg master 数据库 依次导入数据：
 ```
-psql -f smlprft-20181110.dmp -d bdvpgdb
-```
+# 向xpgdb导入
+psql -f smlprft-20181110.dmp -d xpgdb
+
 # 执行完成后，再执行下面的命令
-```
-psql -f countercust-20181110.dmp -d bdvpgdb
-```
+psql -f countercust-20181110.dmp -d xpgdb
+
 # 执行完成后，再执行下面的命令
-```
-psql -f cuanadb-20181110.dmp -d bdvpgdb
+psql -f cuanadb-20181110.dmp -d xpgdb
 ```
