@@ -2,13 +2,16 @@
 
 _注意：在集群的一个数据库中安装扩展，在集群的另一个数据库要使用的话，仍需安装_
 
-# 1. 查看当前已安装Extension''postgres=# \dx
+# 1. 查看当前已安装Extension
 ```
+postgres=# \dx
 				 List of installed extensions
   Name   | Version |   Schema   |         Description
 ---------+---------+------------+------------------------------
  plpgsql | 1.0     | pg_catalog | PL/pgSQL procedural language
 (1 row)
+```
+
 # 2. 查看当前服务器可用的Extension扩展列表
 postgres=# select name from pg_available_extensions;
 		name
