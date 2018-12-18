@@ -13,6 +13,7 @@ postgres=# \dx
 ```
 
 # 2. 查看当前服务器可用的Extension扩展列表
+```
 postgres=# select name from pg_available_extensions;
 		name
 --------------------
@@ -27,6 +28,7 @@ postgres=# select name from pg_available_extensions;
  pg_stat_statements
  ...
  ```
+
 # 3. 安装可用的Extension扩展,查看验证
 ```
 postgres=# create extension pg_stat_statements ;
