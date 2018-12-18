@@ -8,26 +8,41 @@ Auto_Commit基于客户端（psql、pgadmin等等）SESSION连接参数AUTOCOMMI
 # 二、操作验证
 ## 条件一、默认开启自动提交auto_commit功能
 ```
-'postgres=# \echo :AUTOCOMMIT  
+postgres=# \echo :AUTOCOMMIT
 on
 postgres=# create   table test_auto_commit(id int);
 CREATE TABLE
 postgres=# insert into test_auto_commit values (1111);
 INSERT 0 1
+postgres=# rollback ;
+WARNING:  there is no transaction in progress
+ROLLBACK
+postgres=# select * from test_auto_commit ;
+  id  
+------
+ 1111
+(1 row)
+
 postgres=# update  test_auto_commit SET id = 1000 where id = 1111;
 UPDATE 1
+postgres=# rollback ;
+WARNING:  there is no transaction in progress
+ROLLBACK
 postgres=# select * from test_auto_commit ;
   id  
 ------
  1000
 (1 row)
+
 postgres=# delete from test_auto_commit where  id = 1000;
 DELETE 1
+postgres=# rollback ;
+WARNING:  there is no transaction in progress
+ROLLBACK
 postgres=# select * from test_auto_commit ;
  id
 ----
 (0 rows)
-'
 ```
 结论：psql默认开启AUTOCOMMIT参数为on，INSERT、UPDATE、DELETE均无需显式输入commit命令，由客户端SESSION自动添加;
 
