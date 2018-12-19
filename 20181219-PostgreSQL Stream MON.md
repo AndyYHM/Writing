@@ -1,8 +1,11 @@
 # PostgreSQL 流复制监控脚本
 _整理之前的脚本文档，搬家至博客园，梳理一下之前写的shell脚本
-_适用于PostgreSQL版本10、版本9替换函数名称即可
-_\_xlog_location<=> \_wal\_lsn
-_\_location <=> \_lsn_
+
+适用于PostgreSQL版本10、版本9替换函数名称即可
+
+\_xlog_location<=> \_wal\_lsn
+
+\_location <=> \_lsn_
 
 # 1. 脚本输出效果
 ## 1.1 主节点显示效果
