@@ -1,11 +1,11 @@
 # PostgreSQL 流复制监控脚本
-_整理之前的脚本文档，搬家至博客园，梳理一下之前写的shell脚本_
-_适用于PostgreSQL版本10、版本9替换函数名称即可_
-_\_xlog_location<=> \_wal\_lsn_
+_整理之前的脚本文档，搬家至博客园，梳理一下之前写的shell脚本
+_适用于PostgreSQL版本10、版本9替换函数名称即可
+_\_xlog_location<=> \_wal\_lsn
 _\_location <=> \_lsn_
 
-# 脚本输出效果
-## 主节点显示效果
+# 1. 脚本输出效果
+## 1.1 主节点显示效果
 ```
         STREAM_ROLE    : Master         
         ------------------------------
@@ -29,7 +29,7 @@ _\_location <=> \_lsn_
         FLUSH_DIFF     : 0bytes         
         REPLAY_DIFF    : 0bytes
 ```         
-## 从节点效果
+## 1.2 从节点效果
 ```
 STREAM_ROLE    : Slave          
 ------------------------------
@@ -44,18 +44,18 @@ READ_ONLY      : on
 ```
 
 
-# 功能说明
+# 2. 功能说明
 - 判定主机角色
 - 如果为Master节点，则显示复制节点信息，及与主节点差值
 - 如果为Replication节点，则显示为本节点相关信息
 
 
-# 使用说明
+# 3. 使用说明
 - 根据实际环境修改脚本pgdata=""
 - postgres系统用户执行，保证有执行权限
 - 本地执行脚本`sh pg10_stream.sh`
 
-# 脚本内容
+# 4. pg10_stream.sh脚本内容
 ```
 #!/bin/bash
 ################################
