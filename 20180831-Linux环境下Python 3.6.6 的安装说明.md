@@ -1,9 +1,9 @@
 #20180831-Linux环境下Python 3.6.6 的安装说明
 
-_摘要：Python3 安装部署，普通用户编译安装_
-_Author: andy_yhm@yeah.net_
-_Date: 20180831_
-_关键字：python,python3,ssl,安装，pip_
+_摘要：Python3 安装部署，普通用户，编译安装_  
+_Author: andy_yhm@yeah.net_  
+_Date: 20180831_  
+_关键字：python,python3,ssl,安装，pip_  
 
 # 1. openssl的下载与安装
 _python 3若无或未指定openssl，则会报错“pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.”_
@@ -37,7 +37,7 @@ export CPPFLAGS="-I/home/python/python36/SSL/include -I/home/python/python36/SSL
 PYHOME=/home/python/python36/bin
 export PATH=$PYHOME:$PATH
 ```
-## 3.2 建立软连接并使变量生效
+## 3.2 建立软连接并使变量生效
 ```shell
 cd /home/python/python36/bin
 ln -s pip3 pip
