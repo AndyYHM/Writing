@@ -59,7 +59,7 @@ PATRONI_ETCD_KEY: File with the client key. Can be empty if the key is part of c
 # Python3
 
 安装验证
->
+> https://github.com/AndyYHM/Writing/blob/Python/20180831-Linux%E7%8E%AF%E5%A2%83%E4%B8%8BPython%203.6.6%20%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.md   
 
 
 # PostgreSQL10 安装
@@ -70,7 +70,7 @@ PATRONI_ETCD_KEY: File with the client key. Can be empty if the key is part of c
 
 ## 环境变量
 
-### For Patroni
+### For Patroni
 ```
 PATRONI_CONFIGURATION: it is possible to set the entire configuration for the Patroni via PATRONI_CONFIGURATION environment variable. In this case any other environment variables will not be considered!
 PATRONI_NAME: name of the node where the current instance of Patroni is running. Must be unique for the cluster.
