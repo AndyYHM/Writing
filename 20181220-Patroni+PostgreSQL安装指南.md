@@ -1,19 +1,19 @@
 # 20181220-Patroni+PostgreSQL安装指南
 
-> https://patroni.readthedocs.io/en/latest/README.html 
+> https://patroni.readthedocs.io/en/latest/README.html
 
 
-_摘要：Patroni高可用方案部署说明_  
+_摘要：Patroni高可用方案部署说明_
 
-_基于CentOS 7\Python3\Patroni1.5.3\PostgreSQL10.5\ETCD_  
+_基于CentOS 7\Python3\Patroni1.5.3\PostgreSQL10.5\ETCD_
 
-_离线安装Patroni_  
+_离线安装Patroni_
 
-_Author: andy_yhm@yeah.net_  
+_Author: andy_yhm@yeah.net_
 
-_Date: 20181220_  
+_Date: 20181220_
 
-_关键字：PostgreSQL,Python,Patroni_  
+_关键字：PostgreSQL,Python,Patroni_
 
 # 基础环境说明
 
@@ -25,9 +25,12 @@ wget https://github.com/etcd-io/etcd/releases/download/v3.3.10/etcd-v3.3.10-linu
 ```
 Patroni
 ```
+wget https://github.com/zalando/patroni/archive/v1.5.3.tar.gz
 ```
 Python3
 ```
+wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz
+wget https://www.openssl.org/source/openssl-1.1.1-pre9.tar.gz
 ```
 # ETCD
 ## 解压安装ETCD
@@ -59,7 +62,7 @@ PATRONI_ETCD_KEY: File with the client key. Can be empty if the key is part of c
 # Python3
 
 安装验证
-> https://github.com/AndyYHM/Writing/blob/Python/20180831-Linux%E7%8E%AF%E5%A2%83%E4%B8%8BPython%203.6.6%20%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.md   
+> https://github.com/AndyYHM/Writing/blob/Python/20180831-Linux%E7%8E%AF%E5%A2%83%E4%B8%8BPython%203.6.6%20%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.md
 
 
 # PostgreSQL10 安装
