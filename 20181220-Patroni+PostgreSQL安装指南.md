@@ -4,11 +4,17 @@
 
 
 _摘要：Patroni高可用方案部署说明_  
+
 _基于CentOS 7\Python3\Patroni1.5.3\PostgreSQL10.5\ETCD_  
+
 _离线安装Patroni_  
+
 _Author: andy_yhm@yeah.net_  
+
 _Date: 20181220_  
+
 _关键字：PostgreSQL,Python,Patroni_  
+
 # 基础环境说明
 
 
