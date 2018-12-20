@@ -1,17 +1,17 @@
 # 20181220-Patroni+PostgreSQL安装指南
 
-> https://patroni.readthedocs.io/en/latest/README.html
-_Patroni高可用方案部署说明_
-_基于CentOS 7\Python3\Patroni1.5.3\PostgreSQL10.5\ETCD_
-_离线安装Patroni_
-_Author: andy_yhm@yeah.net_
-_Date: 20181220_
-_关键字：PostgreSQL,Python,Patroni_
+> https://patroni.readthedocs.io/en/latest/README.html 
+_Patroni高可用方案部署说明_  
+_基于CentOS 7\Python3\Patroni1.5.3\PostgreSQL10.5\ETCD_  
+_离线安装Patroni_  
+_Author: andy_yhm@yeah.net_  
+_Date: 20181220_  
+_关键字：PostgreSQL,Python,Patroni_  
 # 基础环境说明
 
 
 # 下载安装包
-ETCD
+ETCD
 ```
 wget https://github.com/etcd-io/etcd/releases/download/v3.3.10/etcd-v3.3.10-linux-amd64.tar.gz
 ```
@@ -22,14 +22,14 @@ Python3
 ```
 ```
 # ETCD
-## 解压安装ETCD
+## 解压安装ETCD
 ```shell
 cd {path_etc_dir}
 tar xf etcd-v3.3.10-linux-amd64.tar.gz
 cd etcd-v3.3.10-linux-amd64/
 ./etcd
 ```
-Foreground执行etcd，使用ctrl+c退出，验证etcd可用
+Foreground执行etcd，使用ctrl+c退出，验证etcd可用
 
 ## 修改环境变量
 ```
@@ -93,4 +93,4 @@ PATRONI_SUPERUSER_PASSWORD: password for the superuser, set during initializatio
 # PATRONICTL工具常用功能
 ## 状态查询
 
-## 故障切换管理
+## 故障切换管理
