@@ -6,10 +6,10 @@
 
 > https://github.com/AndyYHM/Writing/
 
->摘要：Linux下，自动化创建SSH互信脚本
->Author: andy_yhm@yeah.net
->Date: 20181225
->关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash
+>摘要：Linux下，自动化创建SSH互信脚本  
+>Author: andy_yhm@yeah.net  
+>Date: 20181225  
+>关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash  
 
 
 
