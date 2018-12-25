@@ -1,15 +1,15 @@
 
 ## 我的Blog
-> https://www.cnblogs.com/piggybaba/  
-> http://piggybaba.cn  
-> https://github.com/AndyYHM/Writing/  
+> 博客园 https://www.cnblogs.com/piggybaba/
+> 个人网站 http://piggybaba.cn
+> GitHub https://github.com/AndyYHM/Writing/  
 
 
 ## 简介信息
->摘要：Linux下，自动化创建SSH互信脚本  
->Author: andy_yhm@yeah.net  
->Date: 20181225  
->关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash  
+>摘要：Linux下，自动化创建SSH互信脚本
+>Author: andy_yhm@yeah.net
+>Date: 20181225
+>关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash
 
 
 
