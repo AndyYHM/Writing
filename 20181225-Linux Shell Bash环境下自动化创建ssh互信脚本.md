@@ -4,15 +4,19 @@
 
 > http://piggybaba.cn
 
-> https://github.com/AndyYHM/Writing/  
-摘要：Linux下，自动化创建SSH互信脚本
-Author: andy_yhm@yeah.net
-Date: 20181225
-关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash
+> https://github.com/AndyYHM/Writing/
+
+>摘要：Linux下，自动化创建SSH互信脚本
+>Author: andy_yhm@yeah.net
+>Date: 20181225
+>关键字：Shell脚本, ssh, ssh trust ,auto，SSH互信,/bin/bash
+
+
+
 
 ## 脚本输出效果
 单一节点上，用户python，执行脚本后，输入三台节点python用户密码，自动化创建SSH互信关系
-```
+```bash
 $ sh SSH_Trust.sh
 /bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
@@ -33,7 +37,6 @@ known_hosts                                                100%  537     0.5KB/s
 ## 功能说明
 - 默认支持3节点自动化创建SSH互信关系
 - 支持多节点自动化创建SSH互信关系
--
 
 
 ## 使用说明
@@ -42,7 +45,8 @@ known_hosts                                                100%  537     0.5KB/s
 - 使用前编辑脚本"config to do"部分,节点hostname和用户名
 - othernodes参数需以空格” “隔开；
 - 执行脚本后，需逐一输入节点用户的密码
-- 若主机节点数规模庞大，建议使用expect工具，另行编辑脚本；
+- 若主机节点数规模庞大，建议使用`expect`工具，另行编辑脚本；
+
 
 ## 脚本内容
 
