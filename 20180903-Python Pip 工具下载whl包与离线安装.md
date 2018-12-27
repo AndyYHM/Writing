@@ -3,7 +3,7 @@
 
 ## 我的Blog
 > 博客园 https://www.cnblogs.com/piggybaba
-   
+
 > 个人网站 http://piggybaba.cn
 
 > GitHub https://github.com/AndyYHM/Writing
@@ -11,39 +11,49 @@
 
 ## 简介信息
 > 摘要：Linux下，python，pip工具离线安装包
+
 > Author: andy_yhm@yeah.net
+
 > Date: 20180903
+
 > 关键字：python，python3,pip,pip3,requirements.txt,freeze
 
 
 ## 查看当前环境
 > 项目建议使用virtualenv，方便后期部署于发布
-(vir_test) [python@piggy ~]$ pip freeze > requirements.txt
 
+```bash
+(vir_test) [python@piggy ~]$ pip freeze > requirements.txt
+```
 ## 联网环境下载相关安装包
+```bash
 (vir_test) [python@piggy ~]$ mkdir  /tmp/whl
 (vir_test) [python@piggy ~]$ pip download  -d /tmp/whl -r requirements.txt
 (vir_test) [python@piggy ~]$ ls -l /tmp/whl/
 total 18128
 -rw-rw-r-- 1 python python   101571 Sep  3 16:31 asn1crypto-0.24.0-py2.py3-none-any.whl
 ...
-
+```
 ## 待打包文件目录
+```bash
 requirements.txt
 /tmp/whl/
-
+```
 ## 查看离线新环境
+```bash
 (vir_test1) [python@piggy Project]$ pip list
 Package    Version
 ---------- -------
 pip        18.0
 setuptools 40.2.0
 wheel      0.31.1
-
+```
 ## 安装到离线环境
+```bash
 (vir_test1) [python@piggy ~]$ pip install --no-index  -f /tmp/whl -r requirements.txt
-
+```
 ## 结果检查
+```bash
 (vir_test1) [python@piggy ~]$ pip list
 Package      Version
 ------------ -------
@@ -65,3 +75,4 @@ PyNaCl       1.2.1
 setuptools   40.2.0
 six          1.11.0
 wheel        0.31.1
+```
